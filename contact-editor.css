@@ -1,0 +1,153 @@
+    /* ===== CONTACT EDITOR POPUP ===== */
+
+    #contactEditorPopup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 380px;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.25);
+        z-index: 999999;
+        display: none;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    /* Tabs */
+    .contact-editor-tabs {
+        display: flex;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .contact-tab {
+        flex: 1;
+        padding: 12px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        background: #f1f1f1;
+        font-weight: 600;
+    }
+
+    .contact-tab.active {
+        background: #A93451;
+        color: #fff;
+    }
+
+    /* Content area */
+    .contact-editor-content {
+        padding: 18px;
+    }
+
+    .contact-tab-panel { display: none; }
+    .contact-tab-panel.active { display: block; }
+
+    #contactEditorPopup label {
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    #contactEditorPopup input,
+    #contactEditorPopup select,
+    #contactEditorPopup textarea {
+        width: 100%;
+        margin-top: 5px;
+        padding: 7px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    textarea { height: 70px; }
+
+    /* Buttons */
+    .save-btn {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        background: #A93451;
+        color: white;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .reset-btn {
+        width: 100%;
+        padding: 12px;
+        background: #444;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        margin-top: 6px;
+    }
+
+    .danger-btn {
+        width: 100%;
+        padding: 10px;
+        background: #b00020;
+        color: white;
+        margin-top: 10px;
+        border-radius: 6px;
+        border: none;
+    }
+
+/* ===== CONTACT TEXT EDITOR POPUP ===== */
+#contactTextEditorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 330px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    z-index: 999999;
+    display: none;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#contactTextEditorPopup label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#contactTextEditorPopup input,
+#contactTextEditorPopup select,
+#contactTextEditorPopup textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+#contactTextEditorPopup textarea {
+    height: 80px;
+}
+
+#contactTextEditorPopup .save-btn {
+    width: 100%;
+    padding: 12px;
+    background: #A93451;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#contactTextEditorPopup .reset-btn {
+    width: 100%;
+    padding: 12px;
+    background: #444;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-top: 8px;
+}

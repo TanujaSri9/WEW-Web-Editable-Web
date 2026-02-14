@@ -1,0 +1,140 @@
+/* ===== BLOG EDITOR POPUP ===== */
+
+#blogEditorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    z-index: 999999;
+    display: none;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.blog-editor-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.blog-tab {
+    flex: 1;
+    padding: 12px;
+    background: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.blog-tab.active {
+    background: #A93451;
+    color: #fff;
+}
+
+.blog-editor-content {
+    padding: 18px;
+}
+
+.blog-tab-panel {
+    display: none;
+}
+
+.blog-tab-panel.active {
+    display: block;
+}
+
+#blogEditorPopup label {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+#blogEditorPopup input,
+#blogEditorPopup select,
+#blogEditorPopup textarea {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    padding: 7px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#blogEditorPopup textarea {
+    height: 80px;
+}
+
+.save-btn,
+.reset-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.save-btn {
+    background: #A93451;
+    color: white;
+}
+
+.reset-btn {
+    background: #444;
+    color: white;
+    margin-bottom: 12px;
+}
+
+/* ===== BLOG TITLE/SUBTITLE TEXT POPUP ===== */
+
+#blogTextEditorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    z-index: 999999;
+    display: none;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#blogTextEditorPopup label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+#blogTextEditorPopup input,
+#blogTextEditorPopup select,
+#blogTextEditorPopup textarea {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    padding: 7px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#saveBlogTextEdit,
+#resetBlogTextEdit {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#saveBlogTextEdit { background: #A93451; }
+#resetBlogTextEdit { background: #444; }

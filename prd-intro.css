@@ -1,0 +1,178 @@
+.navbar {
+    width: 100%;
+    padding: 18px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #3f51b5;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    color: #444;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #3f51b5;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: #3f51b5;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(63, 81, 181, 0.3);
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border: 2px solid #3f51b5;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #3f51b5;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn-outline:hover {
+    background: rgba(63,81,181,0.08);
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #ffffff;
+    color: #1a1a1a;
+    overflow-x: hidden;
+}
+
+/* ================= HERO TEMPLATE SECTION ================= */
+
+.hero-templates {
+    padding: 80px 80px;
+    background: #f5f6f8;
+}
+
+.templates-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.template-card {
+    background: #eef0f3;
+    padding: 60px 30px;
+    border-radius: 22px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* First Card Background Image */
+.templates-container .template-card:first-child {
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+/* Background Layer */
+.templates-container .template-card:first-child::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    
+    background: url("https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405714/hero_tpxpio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: blur(1px);
+    transform: scale(1.1); /* prevents blur edge cut */
+    z-index: 0;
+}
+
+/* Dark Overlay (optional but recommended) */
+.templates-container .template-card:first-child::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+/* Keep Content Above Blur */
+.templates-container .template-card:first-child * {
+    position: relative;
+    z-index: 2;
+}
+
+
+.template-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.template-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.template-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.template-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.template-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}

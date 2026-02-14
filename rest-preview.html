@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rest-preview.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+  <div class="title">Navi's Kitchen</div>
+
+  <div class="nav-right">
+    <!-- Normal nav items for desktop -->
+    <ul class="nav-items">
+      <a href="#hero"><li>Home</li></a>
+      <a href="#about"><li>About</li></a>
+      <a href="#menu"><li>Menu</li></a>
+      <a href="#team-container"><li>Team</li></a>
+      <a href="#testimonials-title"><li>Reviews</li></a>
+      <a href="#blog"><li>Blog</li></a>
+      <a href="#contact"><li>Contact</li></a>
+    </ul>
+
+    <!-- Hamburger button for <=900px -->
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Drawer (hidden by default) -->
+<div class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <button class="nav-close" id="navClose" aria-label="Close menu">&times;</button>
+  <ul class="drawer-items">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#team-container">Team</a></li>
+    <li><a href="#testimonials-title">Reviews</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+    <div class="hero" id="hero">
+        <h1>Experience the Taste of Authentic Flavors</h1>
+        <p>Where culinary artistry meets timeless elegance. Discover a dining experience that celebrates tradition, innovation, and the finest ingredients.</p>
+        <a class="expbtn" href="#menu">Explore Our Menu</a>
+    </div>
+    <div id="about">
+        <h1>Our Story</h1>
+        <p class="abouttag">A journey of passion, tradition, and culinary excellence</p><br><br><br><br>
+        <p class="aboutdesc">Founded in 1995, La Bella Vita has been a cornerstone of fine Italian dining for nearly three decades. Our story began when Chef Marco Rossi, inspired by his grandmother's recipes from the Tuscan countryside, decided to bring authentic Italian flavors to the world.<br><br>
+           Every dish we serve is a testament to our commitment to quality, tradition, and innovation. We source the finest ingredients, honor time-tested techniques, and create an atmosphere where every meal becomes a cherished memory.</p>
+    </div>
+    <div id="teamd">
+        <h1>Meet Our Team</h1>
+        <div class="card-container">
+        <div class="card active">
+            <img src="">
+            <h3>Chef Marco Rossi</h3>
+            <h5>Founder & Head Chef</h5>
+            <p>With 25 years of culinary expertise, Chef Marco brings authentic Italian flavors to every plate.</p>
+        </div>
+        <div class="card">
+            <img src="fchef.jpg">
+            <h3>Sofia Bianchi<h3>
+            <h5>Sous Chef</h5>
+            <p>Trained in Milan, Sofia crafts our signature pasta dishes with passion and precision.</p>
+        </div>
+        <div class="card">
+            <img src="chef2.jpg">
+            <h3>Giovanni Conti</h3>
+            <h5>Restaurant Manager</h5>
+            <p>Giovanni ensures every guest experience is nothing short of exceptional.</p>
+        </div>
+        <button class="arrow arrow-left" id="prev">&#10094;</button>
+        <button class="arrow arrow-right" id="next">&#10095;</button>
+        </div>
+    </div>
+    <div id="menu-container">
+        <div id="menu">
+        <h1>Our Specialties</h1>
+        <p>Savor the finest Italian cuisine, crafted with love and tradition</p>
+        </div>
+        <div class="menu-cards" id="cards">
+            <div class="menucard" id="card1">
+                <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405626/dish_bjezpv.jpg">
+                <p class="menucardp" style="color:white;font-size:14px;padding:0 5px 0 5px; background-color: rgb(226, 193, 25);">Chef's choice</p>
+                <div class="nm">
+                    <h4>Spaghetti Aglio e Olio</h4>
+                    <p style="text-align: left;font-size: 20px;margin-left:20px">Classic Italian pasta with garlic, olive oil, and fresh herbs</p>
+                </div>
+            </div>
+            <div class="menucard" id="card2">
+                <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405630/dish1_lr5slu.jpg">
+                <p class="menucardp" style="color:white;font-size:14px;padding:0 5px 0 5px; background-color:rgba(197, 46, 89, 0.966);">Best Seller</p>
+                <div class="nm">
+                    <h4>Bistecca alla Fiorentina</h4>
+                    <p style="text-align: left;font-size: 20px;margin-left:20px">Prime T-bone steak with roasted vegetables and red wine reduction</p>
+                </div>
+            </div>
+            <div class="menucard" id="card3">
+                <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405528/cake_ksucgr.jpg" alt="">
+                <p class="menucardp" style="color:white;font-size:14px;padding:0 5px 0 5px; background-color:rgba(59, 59, 59, 0.966);">Customer Favorite</p>
+                <div class="nm">
+                    <h4>Tiramisu Classico</h4>
+                    <p style="text-align: left;font-size: 20px;margin-left:20px">Traditional Italian dessert with espresso-soaked ladyfingers</p>
+                </div>
+            </div>
+            <div class="menucard" id="card4">
+                <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405671/dish2_btmw9l.jpg" alt="">
+                <p class="menucardp" style="color:white;font-size:14px;padding:0 5px 0 5px; background-color:rgba(223, 157, 26, 0.966);">Chef's Special</p>
+               <div class="nm">
+                    <h4>Frutti di Mare</h4>
+                    <p style="text-align: left;font-size: 20px;margin-left:20px">Fresh seafood platter with lobster, shrimp, and oysters</p>
+               </div>
+            </div>
+        </div>
+        </div>
+        
+   <div id="team-container">
+  <div class="teamtitle">
+    <h1>Our Culinary Team</h1>
+    <p>Meet the passionate individuals behind every exquisite dish</p>
+  </div>
+
+  <div id="team">
+    <div class="teamcard" id="tcard1">
+      <div class="imgwrap">
+        <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405532/chef2_xgchdg.jpg" alt="Chef Marco Rossi">
+      </div>
+
+      <div class="nt">
+        <h4>Chef Marco Rossi</h4>
+        <h5 style="margin-bottom:0">Head Chef</h5>
+        <p style="text-align: left;font-size: 16px;margin-left:20px;">
+          "Mastering traditional Tuscan recipes with modern flair"
+        </p>
+      </div>
+    </div>
+
+    <div class="teamcard" id="tcard2">
+      <div class="imgwrap">
+        <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405676/fchef_k5n7ml.jpg" alt="Sofia Bianchi">
+      </div>
+
+      <div class="nt">
+        <h4>Sofia Bianchi</h4>
+        <h5 style="margin-bottom:0">Sous Chef</h5>
+        <p style="text-align: left;font-size: 16px;margin-left:20px;">
+          "Expert in handmade pasta and authentic Italian sauces"
+        </p>
+      </div>
+    </div>
+
+    <div class="teamcard" id="tcard3">
+      <div class="imgwrap">
+        <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405530/chef1_sijvbj.jpg" alt="Giovanni Conti">
+      </div>
+
+      <div class="nt">
+        <h4>Giovanni Conti</h4>
+        <h5 style="margin-bottom:0">Restaurant Manager</h5>
+        <p style="text-align:center;font-size: 16px;margin-left:20px">
+          "Creating unforgettable dining experiences"
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <section id="testimonials-section">
+  <h2 class="testimonials-title" id="testimonials-title">What Our Customers Say</h2>
+  <p class="testimonials-subtitle">Testimonials from our valued guests</p>
+  <div class="testimonials-carousel">
+    <!-- Testimonial Card 1 -->
+    <div class="testimonial-card active">
+      <div class="testimonial-avatar">
+        <span>DM</span>
+      </div>
+      <div class="testimonial-stars">
+        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      </div>
+      <p class="testimonial-text">
+        <em>Exceptional food paired with outstanding service. The wine selection perfectly complemented our meal. Highly recommend!</em>
+      </p>
+      <div class="testimonial-author">
+        <strong>David Martinez</strong>
+      </div>
+    </div>
+    <!-- Testimonial Card 2 -->
+    <div class="testimonial-card">
+      <div class="testimonial-avatar">
+        <span>AL</span>
+      </div>
+      <div class="testimonial-stars">
+        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      </div>
+      <p class="testimonial-text">
+        <em>The ambience and the food are fabulous. Staff was attentive. Will definitely come back for another memorable evening!</em>
+      </p>
+      <div class="testimonial-author">
+        <strong>Alice Lee</strong>
+      </div>
+    </div>
+    <!-- Testimonial Card 3 -->
+    <div class="testimonial-card">
+      <div class="testimonial-avatar">
+        <span>JS</span>
+      </div>
+      <div class="testimonial-stars">
+        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      </div>
+      <p class="testimonial-text">
+        <em>Perfect place for a celebration. Everything was flawless, from starters to dessert. Highly recommended!</em>
+      </p>
+      <div class="testimonial-author">
+        <strong>John Smith</strong>
+      </div>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+  <div class="testimonials-pagination">
+    <span class="pagination-dot active"></span>
+    <span class="pagination-dot"></span>
+    <span class="pagination-dot"></span>
+    <!-- Add more dots if you add more cards -->
+  </div>
+</section>
+
+<div id="blog">
+    <div class="blogtitle">
+    <h1>From Our Kitchen</h1>
+    <p>Stories, recipes, and insights from Navi's Kitchen</p>
+    </div>
+    <div class="blogbox">
+    <div class="box" id="box1">
+       <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405497/blog2_mchpjp.jpg" alt="">
+        <h2>The Art of Fresh Pasta Making</h2>
+        <p>Discover the traditional techniques behind our handmade pasta...</p>
+        <a href="#">Read More</a>
+    </div>
+    <div class="box" id="box2">
+      <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405867/blog3_a4w2j4.jpg" alt="">
+        <h2>Wine Pairing Guide: Italian Edition</h2>
+        <p>Learn how to perfectly pair Italian wines with your favorite dishes...</p>
+        <a href="#">Read More</a>
+    </div>
+    <div class="box" id="box3">
+        <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405487/blog1_bcqyic.jpg" alt="">
+        <h2>Farm to Table: Our Ingredient Journey</h2>
+        <p>Meet the local farmers who supply our kitchen with fresh ingredients...</p>
+        <a href="#">Read More</a>
+    </div>
+    </div>
+
+</div>
+<!-- Popup Modal -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <img id="popup-img" src="" alt="">
+    <h2 id="popup-title"></h2>
+    <p id="popup-text"></p>
+  </div>
+</div>
+
+
+<div id="contact">
+  <div class="contacttitle">
+    <h1>Get In Touch</h1>
+    <p>We'd love to hear from you. Reach out for reservations or inquiries.</p>
+  </div>
+  <div class="divisions">
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <div class="subcontact-info">
+        <div class="maininfo" id="address">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+          <h4>Address</h4>
+          <p>123 Via Roma, Florence, Italy</p>
+          </div>
+        </div>
+        <div class="maininfo"id="phone">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+          <h4>Phone</h4>
+          <p>+39 055 123 4567</p>
+          </div>
+        </div>
+        <div class="maininfo"id="Email">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+          <h4>Email</h4>
+          <p>info@labellavita.com</p>
+          </div>
+        </div>
+        <div class="maininfo"id="hours">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+          <h4>hours</h4>
+          <p>Mon-Sun: 12:00 PM - 11:00 PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+  <!-- <iframe class="iframe"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.783042264487!2d11.247869815498937!3d43.77103307911891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a5184e9a2b1f7%3A0x7479c8dfd64d1b5d!2sVia%20Roma%2C%20Firenze%2C%20Italy!5e0!3m2!1sen!2sit!4v1697105789483!5m2!1sen!2sit"
+    width="550"
+    height="250"
+    style="border:0; border-radius:10px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe> -->
+  <div class="bottom">
+  <h3>Follow Us</h3>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-youtube"></i>
+  </div>
+</div>
+    </div>
+    <div class="message">
+      <h2>Send Us a Message</h2>
+      <div class="form">
+        <form>
+          <label for="name">Name</label><br><br>
+          <input type="text" name="name" id="name" placeholder="Your name" required><br><br>
+          <label for="email">Email</label><br><br>
+          <input type="text" anme="email" id="email" placeholder="your@email.com" required><br><br>
+          <label for="msg">Message</label><br><br>
+          <textarea cols="67" rows="8" placeholder="Your Message..."></textarea><br>
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+
+    </div>
+  </div><br><br><hr>
+  <a href="rest-edit.html" class="edit-btn">Edit Template</a>
+
+  <footer>
+     <p>&copy; 2025 La Bella Vita. All rights reserved. Crafted with passion in Florence, Italy.</p>
+  </footer>
+</div>
+
+
+    <script src="rest-preview.js"></script>
+</body>
+</html>

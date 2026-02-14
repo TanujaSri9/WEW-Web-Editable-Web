@@ -1,0 +1,110 @@
+/* ===== HERO EDITABLE SYSTEM ===== */
+
+.editable-hero {
+    position: relative;
+}
+
+.hero-edit-icon {
+    position: absolute;
+    right: -28px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    mask: url('https://cdn-icons-png.flaticon.com/512/84/84380.png') no-repeat center;
+    mask-size: contain;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.editable-hero:hover .hero-edit-icon {
+    opacity: 1;
+}
+
+/* HERO BACKGROUND EDIT ICON */
+.hero-bg-edit-icon {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    mask: url('https://cdn-icons-png.flaticon.com/512/84/84380.png') no-repeat center;
+    mask-size: contain;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.hero-section:hover .hero-bg-edit-icon {
+    opacity: 1;
+}
+
+/* EDITOR POPUP */
+#heroEditorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 22px;
+    width: 340px;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.25);
+    display: none;
+    z-index: 999999;
+
+    /* ⭐ NEW FIXES ⭐ */
+    max-height: 90vh;
+    overflow-y: auto;
+    padding-bottom: 40px;
+}
+
+
+#heroEditorPopup label {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#heroEditorPopup input,
+#heroEditorPopup select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#heroEditorPopup input[type="range"] {
+    padding: 0;
+}
+
+#saveHeroEdit {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #A93451;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resetHeroEdit {
+    width: 100%;
+    padding: 10px;
+    background: #555;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#resetHeroEdit:hover {
+    background: #333;
+}

@@ -1,0 +1,144 @@
+/* ===== ABOUT EDITABLE SYSTEM ===== */
+
+.editable-about {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Pencil Icon */
+.about-edit-icon {
+    position: absolute;
+    right: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-color: #333;
+    mask: url('https://cdn-icons-png.flaticon.com/512/84/84380.png') no-repeat center;
+    mask-size: contain;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.editable-about:hover .about-edit-icon {
+    opacity: 1;
+}
+
+/* Popup Styling */
+#aboutEditorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 22px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.25);
+    display: none;
+    z-index: 99999;
+}
+
+#aboutEditorPopup label {
+    font-size: 14px;
+    color: #333;
+}
+
+#aboutEditorPopup input[type="text"],
+#aboutEditorPopup textarea,
+#aboutEditorPopup input[type="color"],
+#aboutEditorPopup input[type="range"],
+#aboutEditorPopup select {
+    width: 100%;
+    margin: 6px 0 12px;
+}
+
+#aboutEditorPopup textarea {
+    height: 120px;
+    resize: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#aboutEditorPopup input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#saveAboutEdit {
+    width: 100%;
+    padding: 10px;
+    background: #A93451;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Background edit icon */
+.about-bg-edit-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    background-color: #333;
+    mask: url('https://cdn-icons-png.flaticon.com/512/84/84380.png') no-repeat center;
+    mask-size: contain;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 999;
+}
+
+.about-section:hover .about-bg-edit-icon {
+    opacity: 1;
+}
+
+
+#aboutEditorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 340px;
+    max-height: 85vh;       /* 🔥 LIMIT HEIGHT */
+    overflow-y: auto;       /* 🔥 ENABLE SCROLLING */
+    padding: 20px;
+
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+
+    z-index: 9999999;
+}
+
+#aboutEditorPopup::-webkit-scrollbar {
+    width: 6px;
+}
+
+#aboutEditorPopup::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+#resetAboutEdit {
+    width: 100%;
+    padding: 10px;
+    background: #A93451;   /* same color as save */
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#resetAboutEdit:hover {
+    background: #8b2a43;   /* same hover effect */
+}

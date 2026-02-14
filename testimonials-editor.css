@@ -1,0 +1,144 @@
+/* ===================== TESTIMONIALS MAIN POPUP ===================== */
+#testiEditorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    z-index: 999999;
+    display: none;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.testi-editor-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.testi-tab {
+    flex: 1;
+    padding: 12px;
+    background: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.testi-tab.active {
+    background: #A93451;
+    color: #fff;
+}
+
+.testi-editor-content {
+    padding: 18px;
+}
+
+.testi-tab-panel {
+    display: none;
+}
+
+.testi-tab-panel.active {
+    display: block;
+}
+
+#testiEditorPopup label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#testiEditorPopup input,
+#testiEditorPopup select,
+#testiEditorPopup textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+textarea {
+    height: 70px;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background: #A93451;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 12px;
+    background: #444;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.danger-btn {
+    width: 100%;
+    padding: 10px;
+    background: #b00020;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* ===================== TEXT POPUP ===================== */
+#testiTextEditorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    z-index: 999999;
+    display: none;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#testiTextEditorPopup label {
+    margin-top: 10px;
+}
+
+#testiTextEditorPopup textarea {
+    height: 70px;
+}
+
+#testiTextEditorPopup input,
+#testiTextEditorPopup select,
+#testiTextEditorPopup textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#saveTestiTextEdit {
+    background: #A93451;
+}
+
+#resetTestiTextEdit {
+    background: #444;
+}

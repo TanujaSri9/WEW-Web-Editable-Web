@@ -1,0 +1,122 @@
+/* ================= NAVBAR EDITOR POPUP ================= */
+
+#navbarEditorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    z-index: 999999;
+    display: none;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 0;
+}
+
+/* Tabs */
+.navbar-editor-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-tab {
+    flex: 1;
+    padding: 12px;
+    background: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.navbar-tab.active {
+    background: #A93451;
+    color: #fff;
+}
+
+/* Content */
+.navbar-editor-content {
+    padding: 18px;
+}
+
+.navbar-tab-panel {
+    display: none;
+}
+
+.navbar-tab-panel.active {
+    display: block;
+}
+
+#navbarEditorPopup label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#navbarEditorPopup input,
+#navbarEditorPopup select {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background: #A93451;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 12px;
+    background: #444;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.danger-btn {
+    width: 100%;
+    padding: 12px;
+    background: #b00020;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ================= EDIT ICON ================= */
+
+.edit-icon {
+    position: absolute;
+    top: -6px;
+    right: -26px;
+    width: 18px;
+    height: 18px;
+    background: #333;
+    mask: url('https://cdn-icons-png.flaticon.com/512/84/84380.png') center/contain no-repeat;
+    opacity: 0;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.editable-navbar {
+    position: relative;
+}
+
+.editable-navbar:hover .edit-icon {
+    opacity: 1;
+}

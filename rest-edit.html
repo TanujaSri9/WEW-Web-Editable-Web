@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predesigned</title>
+    <link rel="stylesheet" href="rest-edit.css">
+    <link rel="stylesheet" href="navbar-editable.css">
+    <link rel="stylesheet" href="hero-editable.css">
+    <link rel="stylesheet" href="about-editable.css">
+    <link rel="stylesheet" href="menu-editable.css">
+    <link rel="stylesheet" href="team-editable.css">
+    <link rel="stylesheet" href="testimonials-editor.css">
+    <link rel="stylesheet" href="blog-editor.css">
+    <link rel="stylesheet" href="contact-editor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- SECTION 1: Navbar -->
+    <!-- (Already built earlier) -->
+<nav class="navbar">
+    <div class="nav-container">
+
+        <div class="logo">Navi's Kitchen</div>
+
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#team-container">Team</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Toggle -->
+        <button class="nav-toggle" id="navToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+    </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="nav-drawer" id="navDrawer">
+    <button class="nav-close" id="navClose">&times;</button>
+
+    <ul class="drawer-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#team-container">Team</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+    <!-- SECTION 2: Hero -->
+    <!-- (Will be added next) -->
+<section id="hero" class="hero-section editable-hero-bg">
+    <div class="hero-container">
+
+        <h1 class="hero-title">
+            Experience the Taste of Authentic Flavors
+        </h1>
+
+        <p class="hero-subtitle">
+            Where culinary artistry meets timeless elegance. Discover a dining experience that celebrates
+            tradition, innovation, and the finest ingredients.
+        </p>
+
+        <a href="#menu" class="hero-btn">Explore Our Menu</a>
+
+    </div>
+</section>
+
+    <!-- SECTION 3: About -->
+     <section id="about" class="about-section">
+    <div class="container about-container">
+
+        <h1 class="about-title">Our Story</h1>
+
+        <p class="about-tagline">
+            A journey of passion, tradition, and culinary excellence
+        </p>
+
+        <p class="about-desc">
+            Founded in 1995, La Bella Vita has been a cornerstone of fine Italian dining
+            for nearly three decades. Our story began when Chef Marco Rossi, inspired by
+            his grandmother's recipes from the Tuscan countryside, decided to bring
+            authentic Italian flavors to the world.  
+            Every dish we serve is a testament to our commitment to quality,
+            tradition, and innovation.
+        </p>
+
+    </div>
+</section>
+
+
+    <!-- SECTION 4: Menu -->
+     <section id="menu" class="menu-section">
+    <div class="container">
+
+        <h1 class="menu-title">Our Specialties</h1>
+        <p class="menu-subtitle">
+            Savor the finest Italian cuisine, crafted with love and tradition
+        </p>
+
+        <div class="menu-grid">
+
+            <!-- CARD 1 -->
+            <div class="menu-card">
+                <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405626/dish_bjezpv.jpg" alt="">
+                <span class="menu-label chef-choice">Chef's Choice</span>
+                <h3>Spaghetti Aglio e Olio</h3>
+                <p>
+                    Classic Italian pasta with garlic, olive oil, and fresh herbs.
+                </p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="menu-card">
+                <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405630/dish1_lr5slu.jpg" alt="">
+                <span class="menu-label best-seller">Best Seller</span>
+                <h3>Bistecca alla Fiorentina</h3>
+                <p>
+                    Prime T-bone steak with roasted vegetables and red wine reduction.
+                </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="menu-card">
+                <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405528/cake_ksucgr.jpg" alt="">
+                <span class="menu-label favorite">Customer Favorite</span>
+                <h3>Tiramisu Classico</h3>
+                <p>
+                    Traditional Italian dessert with espresso-soaked ladyfingers.
+                </p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="menu-card">
+                <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405671/dish2_btmw9l.jpg" alt="">
+                <span class="menu-label special">Chef's Special</span>
+                <h3>Frutti di Mare</h3>
+                <p>
+                    Fresh seafood platter with lobster, shrimp, and oysters.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- SECTION 5: Team -->
+     <section id="team-container" class="team-section">
+    <div class="container">
+
+        <h1 class="team-title">Our Culinary Team</h1>
+        <p class="team-subtitle">
+            Meet the passionate individuals behind every exquisite dish
+        </p>
+
+        <div class="team-grid">
+
+            <!-- TEAM MEMBER 1 -->
+            <div class="team-card">
+                <div class="imgwrap">
+                    <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405532/chef2_xgchdg.jpg" alt="Chef Marco Rossi">
+                </div>
+                <h3>Chef Marco Rossi</h3>
+                <h4>Head Chef</h4>
+                <p>
+                    "Mastering traditional Tuscan recipes with modern flair."
+                </p>
+            </div>
+
+            <!-- TEAM MEMBER 2 -->
+            <div class="team-card">
+                <div class="imgwrap">
+                    <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405676/fchef_k5n7ml.jpg" alt="Sofia Bianchi">
+                </div>
+                <h3>Sofia Bianchi</h3>
+                <h4>Sous Chef</h4>
+                <p>
+                    "Expert in handmade pasta and authentic Italian sauces."
+                </p>
+            </div>
+
+            <!-- TEAM MEMBER 3 -->
+            <div class="team-card">
+                <div class="imgwrap">
+                    <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405530/chef1_sijvbj.jpg" alt="Giovanni Conti">
+                </div>
+                <h3>Giovanni Conti</h3>
+                <h4>Restaurant Manager</h4>
+                <p>
+                    "Creating unforgettable dining experiences."
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- SECTION 6: Testimonials -->
+     <section id="testimonials" class="testimonials-section">
+    <div class="container">
+
+        <h2 class="testimonials-title">What Our Customers Say</h2>
+        <p class="testimonials-subtitle">
+            Testimonials from our valued guests
+        </p>
+
+        <div class="testimonials-wrapper">
+
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card active">
+                <div class="testimonial-avatar">DM</div>
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                    <em>
+                        Exceptional food paired with outstanding service.
+                        The wine selection perfectly complemented our meal.
+                        Highly recommend!
+                    </em>
+                </p>
+                <h4 class="testimonial-author">David Martinez</h4>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">AL</div>
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                    <em>
+                        The ambience and the food are fabulous.
+                        Staff was attentive. Will definitely come back
+                        for another memorable evening!
+                    </em>
+                </p>
+                <h4 class="testimonial-author">Alice Lee</h4>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-avatar">JS</div>
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                    <em>
+                        Perfect place for a celebration.
+                        Everything was flawless, from starters to dessert.
+                        Highly recommended!
+                    </em>
+                </p>
+                <h4 class="testimonial-author">John Smith</h4>
+            </div>
+
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="testimonials-pagination">
+            <span class="pagination-dot active"></span>
+            <span class="pagination-dot"></span>
+            <span class="pagination-dot"></span>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="blog" class="blog-section">
+    <div class="container">
+
+        <h1 class="blog-title">From Our Kitchen</h1>
+        <p class="blog-subtitle">
+            Stories, recipes, and insights from Navi's Kitchen
+        </p>
+
+        <div class="blog-grid">
+
+            <!-- BLOG CARD 1 -->
+            <div class="blog-card">
+                <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405497/blog2_mchpjp.jpg" alt="">
+                <h2>The Art of Fresh Pasta Making</h2>
+                <p>Discover the traditional techniques behind our handmade pasta...</p>
+
+                <a href="#" 
+                   class="read-more"
+                   data-title="The Art of Fresh Pasta Making"
+                   data-image="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405497/blog2_mchpjp.jpg"
+                   data-full="Discover the traditional techniques behind our handmade pasta. From selecting premium durum wheat to mastering the perfect dough consistency, pasta making is an art passed down through generations. Our chefs bring authenticity to every plate, shaping each strand by hand. Learn the secrets of rolling, shaping, and cooking pasta the Italian way.">
+                   Read More
+                </a>
+            </div>
+
+            <!-- BLOG CARD 2 -->
+            <div class="blog-card">
+                <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405867/blog3_a4w2j4.jpg" alt="">
+                <h2>Wine Pairing Guide: Italian Edition</h2>
+                <p>Learn how to perfectly pair Italian wines with your favorite dishes...</p>
+
+                <a href="#" 
+                   class="read-more"
+                   data-title="Wine Pairing Guide: Italian Edition"
+                   data-image="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405867/blog3_a4w2j4.jpg"
+                   data-full="Learn how to perfectly pair Italian wines with your favorite dishes. Each region of Italy brings unique wines—from the bold Tuscan Chianti to the crisp Venetian Pinot Grigio. This guide explains flavor balancing, acidity matching, and choosing the ideal wine for pasta, seafood, grilled meats, and desserts. A complete journey into the heart of Italian wine culture.">
+                   Read More
+                </a>
+            </div>
+
+            <!-- BLOG CARD 3 -->
+            <div class="blog-card">
+                <img src="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405487/blog1_bcqyic.jpg" alt="">
+                <h2>Farm to Table: Our Ingredient Journey</h2>
+                <p>Meet the local farmers who supply our kitchen with fresh ingredients...</p>
+
+                <a href="#" 
+                   class="read-more"
+                   data-title="Farm to Table: Our Ingredient Journey"
+                   data-image="https://res.cloudinary.com/dtc5mqbv0/image/upload/v1767405487/blog1_bcqyic.jpg"
+                   data-full="Meet the dedicated farmers who supply our kitchen with fresh, organic ingredients. We believe in sustainable sourcing, which ensures better taste, better quality, and a healthier environment. Our chefs personally select seasonal vegetables, herbs, and dairy items straight from local farms. Dive into the story of how your food travels from the fields to your plate.">
+                   Read More
+                </a>         
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- POPUP MODAL (required for JS) -->
+<div id="blog-popup" class="blog-popup">
+    <div class="blog-popup-content">
+        <span class="popup-close">&times;</span>
+        <img id="popup-image" src="" alt="">
+        <h2 id="popup-title"></h2>
+        <p id="popup-text"></p>
+    </div>
+</div>
+
+
+
+    <!-- SECTION 8: Contact -->
+     <section id="contact" class="contact-section">
+    <div class="container">
+
+        <h1 class="contact-title">Get In Touch</h1>
+        <p class="contact-subtitle">
+            We'd love to hear from you. Reach out for reservations or inquiries.
+        </p>
+
+        <div class="contact-info">
+
+            <div class="info-item">
+                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="text">
+                    <h4>Address</h4>
+                    <p>123 Via Roma, Florence, Italy</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="text">
+                    <h4>Phone</h4>
+                    <p>+39 055 123 4567</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="text">
+                    <h4>Email</h4>
+                    <p>info@naviskitchen.com</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="text">
+                    <h4>Hours</h4>
+                    <p>Mon–Sun: 12:00 PM – 11:00 PM</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="follow-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <div class="social"><i class="fa-brands fa-instagram"></i></div>
+                <div class="social"><i class="fa-brands fa-facebook"></i></div>
+                <div class="social"><i class="fa-brands fa-youtube"></i></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 Navi's Kitchen. All rights reserved.</p>
+        </footer>
+
+    </div>
+</section>
+
+
+    <!-- SECTION 9: Footer -->
+     <!-- EXPORT BUTTON -->
+<button id="exportNowBtn" class="export-btn"> ⬇ Export Website</button>
+
+
+<!-- JSZip & FileSaver -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+<script src="exporter.js"></script>
+
+    
+    <!-- Navbar Editor Popup -->
+<!-- ================= NAVBAR EDITOR POPUP ================= -->
+<div id="navbarEditorPopup">
+
+    <!-- Tabs -->
+    <div class="navbar-editor-tabs">
+        <button class="navbar-tab active" data-tab="nav-tab-text">Text</button>
+        <button class="navbar-tab" data-tab="nav-tab-link">Link</button>
+        <button class="navbar-tab" data-tab="nav-tab-actions">Actions</button>
+    </div>
+
+    <div class="navbar-editor-content">
+
+        <!-- ========== TEXT TAB ========== -->
+        <div class="navbar-tab-panel active" id="nav-tab-text">
+            <label>Text:</label>
+            <input type="text" id="navbarEditText">
+
+            <label>Text Color:</label>
+            <input type="color" id="navbarEditColor">
+
+            <label>Font Size:</label>
+            <input type="range" min="12" max="40" id="navbarEditFontSize">
+
+            <label>Font Family:</label>
+            <select id="navbarEditFontFamily">
+                <option value="Poppins">Poppins</option>
+                <option value="Arial">Arial</option>
+                <option value="Georgia">Georgia</option>
+                <option value="serif">Serif</option>
+            </select>
+
+            <label>Font Weight:</label>
+            <select id="navbarEditFontWeight">
+                <option value="300">Light</option>
+                <option value="400">Normal</option>
+                <option value="600">Semi-Bold</option>
+                <option value="700">Bold</option>
+            </select>
+
+            <label>Font Style:</label>
+            <select id="navbarEditFontStyle">
+                <option value="normal">Normal</option>
+                <option value="italic">Italic</option>
+            </select>
+        </div>
+
+        <!-- ========== LINK TAB (HIDDEN FOR LOGO) ========== -->
+        <div class="navbar-tab-panel" id="nav-tab-link">
+            <label>URL (href):</label>
+            <input type="text" id="navbarEditLink">
+        </div>
+
+        <!-- ========== ACTIONS TAB ========== -->
+        <div class="navbar-tab-panel" id="nav-tab-actions">
+            <button id="deleteNavbarItem" class="danger-btn">Delete Item</button>
+            <button id="resetNavbarItem" class="reset-btn">Reset Item</button>
+        </div>
+
+    </div>
+
+    <button id="saveNavbarEdit" class="save-btn">Save</button>
+
+</div>
+
+
+<!-- Hero Editor Popup -->
+<div id="heroEditorPopup">
+
+    <label>Text:</label>
+    <input type="text" id="heroEditText">
+
+    <label>Text Color:</label>
+    <input type="color" id="heroEditTextColor">
+
+    <label>Font Size:</label>
+    <input type="range" min="12" max="100" id="heroEditFontSize">
+
+    <label>Font Family:</label>
+    <select id="heroEditFontFamily">
+        <option value="inherit">Default</option>
+        <option value="Poppins">Poppins</option>
+        <option value="Georgia">Georgia</option>
+        <option value="serif">Serif</option>
+        <option value="sans-serif">Sans Serif</option>
+    </select>
+
+    <label>Font Weight:</label>
+    <select id="heroEditFontWeight">
+        <option value="400">Normal</option>
+        <option value="500">Medium</option>
+        <option value="600">Semi-Bold</option>
+        <option value="700">Bold</option>
+        <option value="800">Extra-Bold</option>
+    </select>
+
+    <label>Font Style:</label>
+    <select id="heroEditFontStyle">
+        <option value="normal">Normal</option>
+        <option value="italic">Italic</option>
+    </select>
+
+    <label>Background Color (Button):</label>
+    <input type="color" id="heroEditBgColor">
+
+    <label>Border Color (Button):</label>
+    <input type="color" id="heroEditBorderColor">
+
+    <hr>
+
+    <label>Background Type:</label>
+    <select id="heroBgType">
+        <option value="none">None</option>
+        <option value="color">Color</option>
+        <option value="image">Image</option>
+        <option value="video">Video</option>
+    </select>
+
+    <label>Background Color:</label>
+    <input type="color" id="heroBgColor">
+
+    <label>Background Image URL:</label>
+    <input type="text" id="heroBgImageURL">
+
+    <label>Background Video URL:</label>
+    <input type="text" id="heroBgVideoURL">
+
+    <button id="saveHeroEdit">Save</button>
+    <button id="resetHeroEdit" style="margin-top:10px;">Reset</button>
+
+</div>
+
+<!-- About Editor Popup -->
+<div id="aboutEditorPopup">
+
+    <label>Text:</label>
+    <textarea id="aboutEditText"></textarea>
+
+    <label>Text Color:</label>
+    <input type="color" id="aboutEditTextColor">
+
+    <label>Font Size:</label>
+    <input type="range" min="12" max="80" id="aboutEditFontSize">
+
+    <label>Font Family:</label>
+    <select id="aboutEditFontFamily">
+        <option value="inherit">Default</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Arial">Arial</option>
+        <option value="Poppins">Poppins</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Courier New">Courier New</option>
+    </select>
+
+    <label>Font Weight:</label>
+    <select id="aboutEditFontWeight">
+        <option value="normal">Normal</option>
+        <option value="bold">Bold</option>
+        <option value="300">Light</option>
+        <option value="500">Medium</option>
+        <option value="700">Heavy</option>
+    </select>
+
+    <label>Font Style:</label>
+    <select id="aboutEditFontStyle">
+        <option value="normal">Normal</option>
+        <option value="italic">Italic</option>
+    </select>
+
+    <label>Line Height:</label>
+    <input type="range" min="1" max="3" step="0.1" id="aboutEditLineHeight">
+
+    <hr>
+
+    <label>Background Type:</label>
+    <select id="aboutBgType">
+        <option value="none">None</option>
+        <option value="color">Color</option>
+        <option value="image">Image</option>
+        <option value="video">Video</option>
+    </select>
+
+    <label>Background Color:</label>
+    <input type="color" id="aboutBgColor">
+
+    <label>Background Image URL:</label>
+    <input type="text" id="aboutBgImageURL" placeholder="https://example.com/image.jpg">
+
+    <label>Background Video URL:</label>
+    <input type="text" id="aboutBgVideoURL" placeholder="https://example.com/video.mp4">
+
+    <button id="saveAboutEdit">Save</button>
+    <button id="resetAboutEdit" style="margin-top:10px; background:#444;">Reset</button>
+
+</div>
+
+<!-- ========== MENU TEXT EDITOR POPUP (TITLE + SUBTITLE) ========== -->
+<div id="menuTextEditorPopup">
+
+    <label>Text:</label>
+    <textarea id="menuTextEditText"></textarea>
+
+    <label>Text Color:</label>
+    <input type="color" id="menuTextEditColor">
+
+    <label>Font Size:</label>
+    <input type="range" min="12" max="80" id="menuTextEditFontSize">
+
+    <label>Font Family:</label>
+    <select id="menuTextEditFontFamily">
+        <option value="Georgia">Georgia</option>
+        <option value="serif">Serif</option>
+        <option value="Arial">Arial</option>
+        <option value="Poppins">Poppins</option>
+    </select>
+
+    <label>Font Weight:</label>
+    <select id="menuTextEditFontWeight">
+        <option value="300">Light</option>
+        <option value="400">Normal</option>
+        <option value="600">Semi-Bold</option>
+        <option value="700">Bold</option>
+    </select>
+
+    <label>Font Style:</label>
+    <select id="menuTextEditFontStyle">
+        <option value="normal">Normal</option>
+        <option value="italic">Italic</option>
+    </select>
+
+    <button id="saveMenuTextEdit" class="save-btn">Save</button>
+    <button id="resetMenuTextEdit" class="reset-btn">Reset</button>
+
+</div>
+
+
+<!-- ========== MENU EDITOR POPUP ========== -->
+<div id="menuEditorPopup">
+
+    <!-- Tabs -->
+    <div class="menu-editor-tabs">
+        <button class="menu-tab active" data-tab="tab-text">Text</button>
+        <button class="menu-tab" data-tab="tab-label">Label</button>
+        <button class="menu-tab" data-tab="tab-image">Image</button>
+        <button class="menu-tab" data-tab="tab-card">Card</button>
+        <button class="menu-tab" data-tab="tab-section">Section</button>
+    </div>
+
+    <div class="menu-editor-content">
+
+        <!-- ===== TAB 1: TEXT ===== -->
+        <div class="menu-tab-panel active" id="tab-text">
+            <label>Dish Name:</label>
+            <input type="text" id="menuEditTitle">
+
+            <label>Description:</label>
+            <textarea id="menuEditDesc"></textarea>
+
+            <label>Font Family:</label>
+            <select id="menuEditFontFamily">
+                <option value="Georgia">Georgia</option>
+                <option value="serif">Serif</option>
+                <option value="Arial">Arial</option>
+                <option value="Poppins">Poppins</option>
+            </select>
+
+            <label>Font Weight:</label>
+            <select id="menuEditFontWeight">
+                <option value="400">Normal</option>
+                <option value="600">Semi-Bold</option>
+                <option value="700">Bold</option>
+            </select>
+
+            <label>Font Style:</label>
+            <select id="menuEditFontStyle">
+                <option value="normal">Normal</option>
+                <option value="italic">Italic</option>
+            </select>
+
+            <label>Text Color:</label>
+            <input type="color" id="menuEditTextColor">
+
+            <label>Font Size:</label>
+            <input type="range" min="12" max="40" id="menuEditFontSize">
+        </div>
+
+        <!-- ===== TAB 2: LABEL ===== -->
+        <div class="menu-tab-panel" id="tab-label">
+            <label>Label Text:</label>
+            <input type="text" id="menuEditLabelText">
+
+            <label>Label Background Color:</label>
+            <input type="color" id="menuEditLabelBg">
+
+            <label>Label Text Color:</label>
+            <input type="color" id="menuEditLabelColor">
+
+            <label>Label Border Radius:</label>
+            <input type="range" min="0" max="30" id="menuEditLabelRadius">
+        </div>
+        
+
+        <!-- === NEW: Description Styling Controls === -->
+<hr class="menu-divider">
+
+<label>Description Text Color:</label>
+<input type="color" id="menuEditDescColor">
+
+<label>Description Font Size:</label>
+<input type="range" id="menuEditDescFontSize" min="12" max="40">
+
+
+        <!-- ===== TAB 3: IMAGE ===== -->
+        <div class="menu-tab-panel" id="tab-image">
+            <label>Image URL:</label>
+            <input type="text" id="menuEditImageURL">
+
+            <label>Image Height:</label>
+            <input type="range" id="menuEditImageHeight" min="150" max="350">
+
+            <label>Image Fit:</label>
+            <select id="menuEditImageFit">
+                <option value="cover">Cover</option>
+                <option value="contain">Contain</option>
+                <option value="fill">Fill</option>
+                <option value="auto">Auto</option>
+            </select>
+        </div>
+
+        <!-- ===== TAB 4: CARD ===== -->
+        <div class="menu-tab-panel" id="tab-card">
+            <label>Card Background:</label>
+            <input type="color" id="menuEditCardBg">
+
+            <label>Card Border Color:</label>
+            <input type="color" id="menuEditCardBorder">
+
+            <label>Border Width:</label>
+            <input type="range" min="0" max="10" id="menuEditCardBorderWidth">
+
+            <label>Border Radius:</label>
+            <input type="range" min="0" max="30" id="menuEditCardRadius">
+
+            <label>Shadow:</label>
+            <select id="menuEditCardShadow">
+                <option value="none">None</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <button id="duplicateMenuCard" class="danger-btn">Duplicate Card</button>
+            <button id="deleteMenuCard" class="danger-btn">Delete Card</button>
+        </div>
+
+        <!-- ===== TAB 5: SECTION ===== -->
+        <div class="menu-tab-panel" id="tab-section">
+            <label>Section Background Color:</label>
+            <input type="color" id="menuSectionBgColor">
+
+            <label>Section Background Image URL:</label>
+            <input type="text" id="menuSectionBgImage">
+
+            <label>Section Background Video URL:</label>
+            <input type="text" id="menuSectionBgVideo">
+        </div>
+
+    </div>
+
+    <button id="saveMenuEdit" class="save-btn">Save</button>
+    <button id="resetMenuEdit" class="reset-btn">Reset</button>
+
+</div>
+
+<!-- ========== TEAM TEXT EDITOR POPUP (TITLE + SUBTITLE) ========== -->
+<div id="teamTextEditorPopup">
+
+    <label>Text:</label>
+    <textarea id="teamTextEditText"></textarea>
+
+    <label>Text Color:</label>
+    <input type="color" id="teamTextEditColor">
+
+    <label>Font Size:</label>
+    <input type="range" min="12" max="80" id="teamTextEditFontSize">
+
+    <label>Font Family:</label>
+    <select id="teamTextEditFontFamily">
+        <option value="Georgia">Georgia</option>
+        <option value="serif">Serif</option>
+        <option value="Arial">Arial</option>
+        <option value="Poppins">Poppins</option>
+    </select>
+
+    <label>Font Weight:</label>
+    <select id="teamTextEditFontWeight">
+        <option value="300">Light</option>
+        <option value="400">Normal</option>
+        <option value="600">Semi-Bold</option>
+        <option value="700">Bold</option>
+    </select>
+
+    <label>Font Style:</label>
+    <select id="teamTextEditFontStyle">
+        <option value="normal">Normal</option>
+        <option value="italic">Italic</option>
+    </select>
+
+    <button id="saveTeamTextEdit" class="save-btn">Save</button>
+    <button id="resetTeamTextEdit" class="reset-btn">Reset</button>
+
+</div>
+
+
+<!-- ========== TEAM EDITOR POPUP (CARD + SECTION) ========== -->
+<div id="teamEditorPopup">
+
+    <!-- Tabs -->
+    <div class="team-editor-tabs">
+        <button class="team-tab active" data-tab="team-tab-text">Text</button>
+        <button class="team-tab" data-tab="team-tab-info">Info</button>
+        <button class="team-tab" data-tab="team-tab-image">Image</button>
+        <button class="team-tab" data-tab="team-tab-card">Card</button>
+        <button class="team-tab" data-tab="team-tab-section">Section</button>
+    </div>
+
+    <div class="team-editor-content">
+
+        <!-- TEXT TAB -->
+        <div class="team-tab-panel active" id="team-tab-text">
+            <label>Name:</label>
+            <input type="text" id="teamEditName">
+
+            <label>Role:</label>
+            <input type="text" id="teamEditRole">
+
+            <label>Description:</label>
+            <textarea id="teamEditDesc"></textarea>
+
+            <label>Font Family:</label>
+            <select id="teamEditFontFamily">
+                <option value="Georgia">Georgia</option>
+                <option value="serif">Serif</option>
+                <option value="Arial">Arial</option>
+                <option value="Poppins">Poppins</option>
+            </select>
+
+            <label>Font Weight:</label>
+            <select id="teamEditFontWeight">
+                <option value="400">Normal</option>
+                <option value="600">Semi-Bold</option>
+                <option value="700">Bold</option>
+            </select>
+
+            <label>Font Style:</label>
+            <select id="teamEditFontStyle">
+                <option value="normal">Normal</option>
+                <option value="italic">Italic</option>
+            </select>
+
+            <label>Text Color:</label>
+            <input type="color" id="teamEditTextColor">
+
+            <label>Font Size:</label>
+            <input type="range" min="12" max="40" id="teamEditFontSize">
+        </div>
+
+
+        <!-- INFO TAB (Role + Description separate editing) -->
+<div class="team-tab-panel" id="team-tab-info">
+    
+    <label>Role Text:</label>
+    <input type="text" id="teamEditRoleOnly">
+
+    <label>Description Text:</label>
+    <textarea id="teamEditDescOnly"></textarea>
+
+    <label>Role Text Color:</label>
+    <input type="color" id="teamEditRoleColor">
+
+    <label>Description Text Color:</label>
+    <input type="color" id="teamEditDescColor">
+
+    <label>Role Font Size:</label>
+    <input type="range" id="teamEditRoleSize" min="12" max="40">
+
+    <label>Description Font Size:</label>
+    <input type="range" id="teamEditDescSize" min="12" max="30">
+
+</div>
+
+
+
+        <!-- IMAGE TAB -->
+        <div class="team-tab-panel" id="team-tab-image">
+            <label>Image URL:</label>
+            <input type="text" id="teamEditImageURL">
+
+            <label>Image Height:</label>
+            <input type="range" id="teamEditImageHeight" min="200" max="400">
+
+            <label>Image Fit:</label>
+            <select id="teamEditImageFit">
+                <option value="cover">Cover</option>
+                <option value="contain">Contain</option>
+                <option value="fill">Fill</option>
+                <option value="auto">Auto</option>
+            </select>
+        </div>
+
+
+        <!-- CARD TAB -->
+        <div class="team-tab-panel" id="team-tab-card">
+            <label>Card Background:</label>
+            <input type="color" id="teamEditCardBg">
+
+            <label>Card Border Color:</label>
+            <input type="color" id="teamEditCardBorder">
+
+            <label>Border Width:</label>
+            <input type="range" min="0" max="10" id="teamEditCardBorderWidth">
+
+            <label>Border Radius:</label>
+            <input type="range" min="0" max="30" id="teamEditCardRadius">
+
+            <label>Shadow:</label>
+            <select id="teamEditCardShadow">
+                <option value="none">None</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <button id="duplicateTeamCard" class="danger-btn">Duplicate Card</button>
+            <button id="deleteTeamCard" class="danger-btn">Delete Card</button>
+        </div>
+
+
+        <!-- SECTION TAB -->
+        <div class="team-tab-panel" id="team-tab-section">
+            <label>Section Background Color:</label>
+            <input type="color" id="teamSectionBgColor">
+
+            <label>Section Background Image URL:</label>
+            <input type="text" id="teamSectionBgImage">
+
+            <label>Section Background Video URL:</label>
+            <input type="text" id="teamSectionBgVideo">
+        </div>
+
+    </div>
+
+    <button id="saveTeamEdit" class="save-btn">Save</button>
+    <button id="resetTeamEdit" class="reset-btn">Reset</button>
+
+</div>
+
+
+<!-- ===================== TESTIMONIALS TEXT EDITOR POPUP ===================== -->
+<div id="testiTextEditorPopup">
+
+    <label>Text:</label>
+    <textarea id="testiTextEditText"></textarea>
+
+    <label>Text Color:</label>
+    <input type="color" id="testiTextEditColor">
+
+    <label>Font Size:</label>
+    <input type="range" id="testiTextEditFontSize" min="12" max="40">
+
+    <label>Font Family:</label>
+    <select id="testiTextEditFontFamily">
+        <option value="Georgia">Georgia</option>
+        <option value="serif">Serif</option>
+        <option value="Arial">Arial</option>
+        <option value="Poppins">Poppins</option>
+    </select>
+
+    <label>Font Weight:</label>
+    <select id="testiTextEditFontWeight">
+        <option value="300">Light</option>
+        <option value="400">Normal</option>
+        <option value="600">Semi-Bold</option>
+        <option value="700">Bold</option>
+    </select>
+
+    <label>Font Style:</label>
+    <select id="testiTextEditFontStyle">
+        <option value="normal">Normal</option>
+        <option value="italic">Italic</option>
+    </select>
+
+    <button id="saveTestiTextEdit" class="save-btn">Save</button>
+    <button id="resetTestiTextEdit" class="reset-btn">Reset</button>
+
+</div>
+
+
+
+<!-- ===================== TESTIMONIALS MAIN EDITOR POPUP ===================== -->
+<div id="testiEditorPopup">
+
+    <div class="testi-editor-tabs">
+        <button class="testi-tab active" data-tab="testi-tab-text">Text</button>
+        <button class="testi-tab" data-tab="testi-tab-avatar">Avatar</button>
+        <button class="testi-tab" data-tab="testi-tab-stars">Stars</button>
+        <button class="testi-tab" data-tab="testi-tab-card">Card</button>
+        <button class="testi-tab" data-tab="testi-tab-section">Section</button>
+        <button class="testi-tab" data-tab="testi-tab-pagination">Pagination</button>
+    </div>
+
+    <div class="testi-editor-content">
+
+        <!-- ================= TEXT TAB ================= -->
+        <div class="testi-tab-panel active" id="testi-tab-text">
+            <label>Author Name:</label>
+            <input type="text" id="testiEditAuthor">
+
+            <label>Review Text:</label>
+            <textarea id="testiEditText"></textarea>
+
+            <label>Font Family:</label>
+            <select id="testiEditFontFamily">
+                <option value="Georgia">Georgia</option>
+                <option value="serif">Serif</option>
+                <option value="Arial">Arial</option>
+                <option value="Poppins">Poppins</option>
+            </select>
+
+            <label>Font Weight:</label>
+            <select id="testiEditFontWeight">
+                <option value="400">Normal</option>
+                <option value="600">Semi-Bold</option>
+                <option value="700">Bold</option>
+            </select>
+
+            <label>Font Style:</label>
+            <select id="testiEditFontStyle">
+                <option value="normal">Normal</option>
+                <option value="italic">Italic</option>
+            </select>
+
+            <label>Text Color:</label>
+            <input type="color" id="testiEditTextColor">
+
+            <label>Font Size:</label>
+            <input type="range" min="12" max="40" id="testiEditFontSize">
+        </div>
+
+
+        <!-- ================= AVATAR TAB ================= -->
+        <div class="testi-tab-panel" id="testi-tab-avatar">
+            <label>Avatar Initials:</label>
+            <input type="text" id="testiEditAvatarText">
+
+            <label>Avatar Background:</label>
+            <input type="color" id="testiEditAvatarBg">
+
+            <label>Avatar Text Color:</label>
+            <input type="color" id="testiEditAvatarColor">
+
+            <label>Avatar Font Size:</label>
+            <input type="range" id="testiEditAvatarSize" min="14" max="40">
+        </div>
+
+
+        <!-- ================= STARS TAB ================= -->
+        <div class="testi-tab-panel" id="testi-tab-stars">
+            <label>Star Count (0–5):</label>
+            <input type="range" min="0" max="5" id="testiEditStars">
+
+            <label>Star Color:</label>
+            <input type="color" id="testiEditStarColor">
+        </div>
+
+
+        <!-- ================= CARD TAB ================= -->
+        <div class="testi-tab-panel" id="testi-tab-card">
+            <label>Card Background:</label>
+            <input type="color" id="testiEditCardBg">
+
+            <label>Border Radius:</label>
+            <input type="range" min="0" max="30" id="testiEditCardRadius">
+
+            <label>Shadow:</label>
+            <select id="testiEditCardShadow">
+                <option value="none">None</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label>Card Padding:</label>
+            <input type="range" min="10" max="60" id="testiEditCardPadding">
+
+            <button id="duplicateTestiCard" class="danger-btn">Duplicate</button>
+            <button id="deleteTestiCard" class="danger-btn">Delete</button>
+        </div>
+
+
+        <!-- ================= SECTION TAB ================= -->
+        <div class="testi-tab-panel" id="testi-tab-section">
+            <label>Section Background Color:</label>
+            <input type="color" id="testiSectionBgColor">
+
+            <label>Section Background Image URL:</label>
+            <input type="text" id="testiSectionBgImage">
+        </div>
+
+
+        <!-- ================= PAGINATION TAB ================= -->
+        <div class="testi-tab-panel" id="testi-tab-pagination">
+            <label>Active Dot Color:</label>
+            <input type="color" id="testiPagActiveColor">
+
+            <label>Inactive Dot Color:</label>
+            <input type="color" id="testiPagInactiveColor">
+
+            <label>Dot Size:</label>
+            <input type="range" id="testiPagDotSize" min="6" max="30">
+        </div>
+
+    </div>
+
+    <button id="saveTestiEdit" class="save-btn">Save</button>
+    <button id="resetTestiEdit" class="reset-btn">Reset</button>
+
+</div>
+
+
+<!-- ===========================
+     BLOG TEXT EDITOR (TITLE + SUBTITLE)
+=========================== -->
+<div id="blogTextEditorPopup">
+
+    <label>Text:</label>
+    <textarea id="blogTextEditText"></textarea>
+
+    <label>Text Color:</label>
+    <input type="color" id="blogTextEditColor">
+
+    <label>Font Size:</label>
+    <input type="range" min="12" max="80" id="blogTextEditFontSize">
+
+    <label>Font Family:</label>
+    <select id="blogTextEditFontFamily">
+        <option value="Georgia">Georgia</option>
+        <option value="serif">Serif</option>
+        <option value="Arial">Arial</option>
+        <option value="Poppins">Poppins</option>
+    </select>
+
+    <label>Font Weight:</label>
+    <select id="blogTextEditFontWeight">
+        <option value="300">Light</option>
+        <option value="400">Normal</option>
+        <option value="600">Semi-Bold</option>
+        <option value="700">Bold</option>
+    </select>
+
+    <label>Font Style:</label>
+    <select id="blogTextEditFontStyle">
+        <option value="normal">Normal</option>
+        <option value="italic">Italic</option>
+    </select>
+
+    <button id="saveBlogTextEdit" class="save-btn">Save</button>
+    <button id="resetBlogTextEdit" class="reset-btn">Reset</button>
+
+</div>
+
+
+
+<!-- ===========================
+        BLOG CARD EDITOR POPUP
+=========================== -->
+<div id="blogEditorPopup">
+
+    <!-- Tabs -->
+    <div class="blog-editor-tabs">
+        <button class="blog-tab active" data-tab="blog-tab-text">Text</button>
+        <button class="blog-tab" data-tab="blog-tab-info">Info</button>
+        <button class="blog-tab" data-tab="blog-tab-image">Image</button>
+        <button class="blog-tab" data-tab="blog-tab-card">Card</button>
+        <button class="blog-tab" data-tab="blog-tab-section">Section</button>
+    </div>
+
+    <div class="blog-editor-content">
+
+        <!-- TAB 1: TEXT -->
+        <div class="blog-tab-panel active" id="blog-tab-text">
+            <label>Blog Title:</label>
+            <input type="text" id="blogEditTitle">
+
+            <label>Short Description (Preview Text):</label>
+            <textarea id="blogEditShortText"></textarea>
+
+            <label>Title Color:</label>
+            <input type="color" id="blogEditTitleColor">
+
+            <label>Description Color:</label>
+            <input type="color" id="blogEditDescColor">
+
+            <label>Title Font Size:</label>
+            <input type="range" min="14" max="40" id="blogEditTitleSize">
+
+            <label>Description Font Size:</label>
+            <input type="range" min="12" max="30" id="blogEditDescSize">
+        </div>
+
+
+        <!-- TAB 2: INFO (FULL CONTENT + BUTTON) -->
+        <div class="blog-tab-panel" id="blog-tab-info">
+            <label>Full Content (Popup Text):</label>
+            <textarea id="blogEditFullText"></textarea>
+
+            <label>Button Text:</label>
+            <input type="text" id="blogEditBtnText">
+
+            <label>Button Background:</label>
+            <input type="color" id="blogEditBtnBg">
+
+            <label>Button Text Color:</label>
+            <input type="color" id="blogEditBtnColor">
+
+            <label>Button Border Radius:</label>
+            <input type="range" min="0" max="30" id="blogEditBtnRadius">
+
+            <label>Button Font Size:</label>
+            <input type="range" min="12" max="30" id="blogEditBtnSize">
+        </div>
+
+
+        <!-- TAB 3: IMAGE -->
+        <div class="blog-tab-panel" id="blog-tab-image">
+            <label>Image URL:</label>
+            <input type="text" id="blogEditImageURL">
+
+            <label>Image Height:</label>
+            <input type="range" id="blogEditImageHeight" min="150" max="450">
+
+            <label>Image Fit:</label>
+            <select id="blogEditImageFit">
+                <option value="cover">Cover</option>
+                <option value="contain">Contain</option>
+                <option value="fill">Fill</option>
+                <option value="auto">Auto</option>
+            </select>
+        </div>
+
+
+        <!-- TAB 4: CARD -->
+        <div class="blog-tab-panel" id="blog-tab-card">
+            <label>Card Background:</label>
+            <input type="color" id="blogEditCardBg">
+
+            <label>Card Border Color:</label>
+            <input type="color" id="blogEditCardBorder">
+
+            <label>Border Width:</label>
+            <input type="range" min="0" max="10" id="blogEditCardBorderWidth">
+
+            <label>Border Radius:</label>
+            <input type="range" min="0" max="30" id="blogEditCardRadius">
+
+            <label>Shadow:</label>
+            <select id="blogEditCardShadow">
+                <option value="none">None</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <button id="duplicateBlogCard" class="danger-btn">Duplicate Card</button>
+            <button id="deleteBlogCard" class="danger-btn">Delete Card</button>
+        </div>
+
+
+        <!-- TAB 5: SECTION -->
+        <div class="blog-tab-panel" id="blog-tab-section">
+            <label>Section Background Color:</label>
+            <input type="color" id="blogSectionBgColor">
+
+            <label>Section Background Image URL:</label>
+            <input type="text" id="blogSectionBgImage">
+
+            <label>Section Background Video URL:</label>
+            <input type="text" id="blogSectionBgVideo">
+        </div>
+
+    </div>
+
+    <button id="saveBlogEdit" class="save-btn">Save</button>
+    <button id="resetBlogEdit" class="reset-btn">Reset</button>
+
+</div>
+
+<!-- ================= CONTACT TEXT EDITOR POPUP ================= -->
+<div id="contactTextEditorPopup">
+
+    <label>Text:</label>
+    <textarea id="contactTextEditText"></textarea>
+
+    <label>Text Color:</label>
+    <input type="color" id="contactTextEditColor">
+
+    <label>Font Size:</label>
+    <input type="range" id="contactTextEditFontSize" min="12" max="60">
+
+    <label>Font Family:</label>
+    <select id="contactTextEditFontFamily">
+        <option value="Georgia">Georgia</option>
+        <option value="serif">Serif</option>
+        <option value="Arial">Arial</option>
+        <option value="Poppins">Poppins</option>
+    </select>
+
+    <label>Font Weight:</label>
+    <select id="contactTextEditFontWeight">
+        <option value="300">Light</option>
+        <option value="400">Normal</option>
+        <option value="600">Semi-Bold</option>
+        <option value="700">Bold</option>
+    </select>
+
+    <label>Font Style:</label>
+    <select id="contactTextEditFontStyle">
+        <option value="normal">Normal</option>
+        <option value="italic">Italic</option>
+    </select>
+
+    <button id="saveContactTextEdit" class="save-btn">Save</button>
+    <button id="resetContactTextEdit" class="reset-btn">Reset</button>
+
+</div>
+
+
+
+
+<!-- ================= CONTACT FULL EDITOR POPUP (Info Items + Social Items) ================= -->
+<div id="contactEditorPopup">
+
+    <!-- Tabs -->
+    <div class="contact-editor-tabs">
+        <button class="contact-tab active" data-tab="c-tab-text">Text</button>
+        <button class="contact-tab" data-tab="c-tab-icon">Icon</button>
+        <button class="contact-tab" data-tab="c-tab-card">Card</button>
+        <button class="contact-tab" data-tab="c-tab-section">Section</button>
+        <button class="contact-tab" data-tab="c-tab-actions">Actions</button>
+    </div>
+
+    <div class="contact-editor-content">
+
+     <!-- ===== TEXT TAB (UPDATED) ===== -->
+<div class="contact-tab-panel active" id="c-tab-text">
+
+    <!-- HEADING -->
+    <label><b>Heading:</b></label>
+    <input type="text" id="contactEditHeading">
+
+    <label>Heading Font Family:</label>
+    <select id="contactEditHeadingFontFamily">
+        <option value="Georgia">Georgia</option>
+        <option value="serif">Serif</option>
+        <option value="Arial">Arial</option>
+        <option value="Poppins">Poppins</option>
+    </select>
+
+    <label>Heading Font Weight:</label>
+    <select id="contactEditHeadingFontWeight">
+        <option value="300">Light</option>
+        <option value="400">Normal</option>
+        <option value="600">Semi-Bold</option>
+        <option value="700">Bold</option>
+    </select>
+
+    <label>Heading Font Style:</label>
+    <select id="contactEditHeadingFontStyle">
+        <option value="normal">Normal</option>
+        <option value="italic">Italic</option>
+    </select>
+
+    <label>Heading Color:</label>
+    <input type="color" id="contactEditHeadingColor">
+
+    <label>Heading Font Size:</label>
+    <input type="range" min="12" max="40" id="contactEditHeadingFontSize">
+
+
+
+    <hr style="margin:20px 0;">
+
+
+
+    <!-- SUBTEXT -->
+    <label><b>Subtext:</b></label>
+    <textarea id="contactEditSubtext"></textarea>
+
+    <label>Subtext Font Family:</label>
+    <select id="contactEditSubFontFamily">
+        <option value="Georgia">Georgia</option>
+        <option value="serif">Serif</option>
+        <option value="Arial">Arial</option>
+        <option value="Poppins">Poppins</option>
+    </select>
+
+    <label>Subtext Font Weight:</label>
+    <select id="contactEditSubFontWeight">
+        <option value="300">Light</option>
+        <option value="400">Normal</option>
+        <option value="600">Semi-Bold</option>
+        <option value="700">Bold</option>
+    </select>
+
+    <label>Subtext Font Style:</label>
+    <select id="contactEditSubFontStyle">
+        <option value="normal">Normal</option>
+        <option value="italic">Italic</option>
+    </select>
+
+    <label>Subtext Color:</label>
+    <input type="color" id="contactEditSubColor">
+
+    <label>Subtext Font Size:</label>
+    <input type="range" min="10" max="32" id="contactEditSubFontSize">
+
+</div>
+
+
+
+
+        <!-- ===== ICON TAB ===== -->
+        <div class="contact-tab-panel" id="c-tab-icon">
+
+            <label>FA Icon Class:</label>
+            <input type="text" placeholder="fa-solid fa-phone" id="contactEditIconClass">
+
+            <label>Icon Color:</label>
+            <input type="color" id="contactEditIconColor">
+
+            <label>Icon Background:</label>
+            <input type="color" id="contactEditIconBg">
+
+            <label>Icon Size:</label>
+            <input type="range" min="16" max="60" id="contactEditIconSize">
+
+            <label>Icon Circle Radius:</label>
+            <input type="range" min="0" max="50" id="contactEditIconRadius">
+        </div>
+
+
+
+
+        <!-- ===== CARD TAB ===== -->
+        <div class="contact-tab-panel" id="c-tab-card">
+            <label>Card Background:</label>
+            <input type="color" id="contactEditCardBg">
+
+            <label>Card Border Color:</label>
+            <input type="color" id="contactEditCardBorder">
+
+            <label>Border Width:</label>
+            <input type="range" min="0" max="10" id="contactEditCardBorderWidth">
+
+            <label>Border Radius:</label>
+            <input type="range" min="0" max="30" id="contactEditCardRadius">
+
+            <label>Shadow:</label>
+            <select id="contactEditCardShadow">
+                <option value="none">None</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+
+
+
+
+        <!-- ===== SECTION TAB ===== -->
+        <div class="contact-tab-panel" id="c-tab-section">
+            <label>Section BG Color:</label>
+            <input type="color" id="contactSectionBgColor">
+
+            <label>Section Background Image URL:</label>
+            <input type="text" id="contactSectionBgImage">
+
+            <label>Section Background Video URL:</label>
+            <input type="text" id="contactSectionBgVideo">
+        </div>
+
+
+
+        <!-- ===== ACTIONS TAB ===== -->
+        <div class="contact-tab-panel" id="c-tab-actions">
+            <button id="duplicateContactItem" class="danger-btn">Duplicate</button>
+            <button id="deleteContactItem" class="danger-btn">Delete</button>
+        </div>
+
+    </div>
+
+    <button id="saveContactEdit" class="save-btn">Save</button>
+    <button id="resetContactEdit" class="reset-btn">Reset</button>
+
+</div>
+
+
+</body>
+
+<script src="navbar-editable.js"></script>
+<script src="hero-editable.js"></script>
+<script src="about-editable.js"></script>
+<script src="menu-editable.js"></script>
+<script src="team-editable.js"></script>
+<script src="testimonials-editor.js"></script>
+<script src="blog-editor.js"></script>
+<script src="contact-editor.js"></script>
+<script src="exporter.js"></script>
+
+
+
+</script>
+
+</html>

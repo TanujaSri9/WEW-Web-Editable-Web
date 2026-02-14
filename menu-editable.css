@@ -1,0 +1,171 @@
+/* ===== MENU EDITOR POPUP ===== */
+
+#menuEditorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    z-index: 999999;
+    display: none;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Tabs */
+.menu-editor-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-tab {
+    flex: 1;
+    padding: 12px;
+    background: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.menu-tab.active {
+    background: #A93451;
+    color: #fff;
+}
+
+/* Content */
+.menu-editor-content {
+    padding: 18px;
+}
+
+.menu-tab-panel {
+    display: none;
+}
+
+.menu-tab-panel.active {
+    display: block;
+}
+
+#menuEditorPopup label {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+#menuEditorPopup input,
+#menuEditorPopup select,
+#menuEditorPopup textarea {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    padding: 7px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 70px;
+}
+
+/* Buttons */
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background: #A93451;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 12px;
+    background: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+/* Duplicate + Delete buttons */
+.danger-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #b00020;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ===== MENU TEXT EDITOR POPUP ===== */
+#menuTextEditorPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    z-index: 999999;
+    display: none;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#menuTextEditorPopup label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+#menuTextEditorPopup input,
+#menuTextEditorPopup select,
+#menuTextEditorPopup textarea {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    padding: 7px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#saveMenuTextEdit,
+#resetMenuTextEdit {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#saveMenuTextEdit {
+    background: #A93451;
+}
+
+#resetMenuTextEdit {
+    background: #444;
+}
+
+
+/* Divider for new desc controls in Label tab */
+.menu-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+    opacity: 0.5;
+}
